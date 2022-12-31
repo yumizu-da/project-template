@@ -1,0 +1,22 @@
+version: '3.5'
+services:
+  dev:
+    container_name: mizuta_env
+    build:
+      context: .
+      dockerfile: Dockerfile
+    shm_size: '24gb'
+    volumes:
+      - type: bind
+        source: $PWD
+        target: /workspace
+    working_dir: /workspace
+    deploy:
+      resources:
+        reservations:
+          devices:
+          - driver: nvidia
+            capabilities: [gpu]
+    ports:
+      - "8008:8008"
+    tty: true

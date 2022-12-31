@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "mizuta-env"
+version = "0.1.0"
+description = ""
+authors = ["yuki mizuta"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+numpy = "1.23.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.12.0"
+pyproject-flake8 = "^6.0.0.post1"
+flake8-bugbear = "^22.12.6"
+pre-commit = "^2.21.0"
+mypy = "^0.991"
+isort = "^5.11.4"
+pytest = "^7.2.0"
+
+[tool.black]
+line-length = 119
+
+[tool.isort]
+profile = "black"
+line_length = 119
