@@ -8,7 +8,7 @@ VScode × Pythonでの開発環境のテンプレート \
 - docker
 - poetry
 - black
-- pyproject-flake8
+- flake8
 - isort
 - mypy
 - pre-commit
