@@ -29,7 +29,7 @@ docker-compose up -d --build
 <https://qiita.com/edge-m/items/846715217fc3dd481a84> \
 <https://zenn.dev/alivelimb/articles/20220501-python-env> \
 <https://github.com/arrowkato/my_favorite_python_env> \
-<https://zenn.dev/jdbtisk/articles/e6ed54b38b6a45#isort> \
+<https://zenn.dev/jdbtisk/articles/e6ed54b38b6a45> \
 <https://qiita.com/ShortArrow/items/f29e4d0df7d836eec770>
 
 ### VScode 拡張機能
