@@ -6,7 +6,7 @@ authors = ["yuki mizuta"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = "^3.9.16"
 numpy = "1.23.3"
 
 
@@ -16,7 +16,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.group.dev.dependencies]
 black = "^22.12.0"
-pyproject-flake8 = "^6.0.0"
+pyproject-flake8 = "^6.0.0.post1"
 flake8-bugbear = "^22.12.6"
 pre-commit = "^2.21.0"
 mypy = "^0.991"
@@ -25,7 +25,7 @@ pytest = "^7.2.0"
 ipykernel = "^6.19.4"
 
 [tool.black]
-target-version = ['py38']
+target-version = ['py39']
 line-length = 119
 
 [tool.isort]
@@ -33,5 +33,5 @@ line_length = 119
 profile = "black"
 
 [tool.mypy]
-python_version = "3.8"
+python_version = "3.9"
 ignore_missing_imports = true
