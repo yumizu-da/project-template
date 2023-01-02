@@ -4,6 +4,7 @@ RUN apt-get update && \
     apt-get install --no-install-recommends -y curl && \
     apt-get clean
 
+ENV PYTHONPATH "${PYTHONPATH}:/workspace"
 WORKDIR /workspace
 
 # poetry

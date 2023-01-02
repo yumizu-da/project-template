@@ -13,6 +13,7 @@ VScode × Pythonでの開発環境のテンプレート \
 - mypy
 - pre-commit
 - pytest
+- azure-pipeline
 
 ## Environment
 
