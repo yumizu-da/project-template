@@ -1,7 +1,6 @@
 # Docker
 # Build a Docker image
 # https://docs.microsoft.com/azure/devops/pipelines/languages/docker
-# https://stackoverflow.com/questions/71423949/azure-pipelines-proper-way-to-use-poetry
 
 trigger:
 - main
@@ -26,25 +25,12 @@ stages:
       inputs:
         command: build
         dockerfile: '$(Build.SourcesDirectory)/Dockerfile'
-        tags: |
-          $(tag)
-    - task: UsePythonVersion@0
-      inputs:
-        versionSpec: '3.9'
-      displayName: 'Use Python 3.9'
+        arguments: '-t ubuntu:$(Build.BuildId)'
     - script: |
-        curl -sSL https://install.python-poetry.org/ | python -
-        export PATH=$PATH:$HOME/.poetry/bin
-        poetry install --no-root
-      displayName: 'Install dependencies'
+        docker run -v $(pwd):/workspace ubuntu:$(Build.BuildId) python -m black --check .
+        docker run -v $(pwd):/workspace ubuntu:$(Build.BuildId) python -m isort --check --diff .
+        docker run -v $(pwd):/workspace ubuntu:$(Build.BuildId) python -m mypy .
+      displayName: 'Run Linter and Type hints'
     - script: |
-        cd $(Build.SourcesDirectory)
-        poetry run black .
-        poetry run isort .
-        poetry run mypy .
-      displayName: 'Linter and Type hints'
-    - script: |
-        cd $(Build.SourcesDirectory)
-        export PYTHONPATH='$(Build.SourcesDirectory)'
-        poetry run pytest
-      displayName: 'Pytest'
+        docker run -v $(pwd):/workspace ubuntu:$(Build.BuildId) python -m pytest
+      displayName: 'Run PyTest'

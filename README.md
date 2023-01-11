@@ -8,12 +8,12 @@ VScode × Pythonでの開発環境のテンプレート \
 - docker
 - poetry
 - black
-- flake8
+- pflake8
 - isort
 - mypy
-- pre-commit
 - pytest
-- azure-pipeline
+- azure-pipelines
+- mkdocs
 
 ## Environment
 
@@ -39,6 +39,11 @@ docker-compose up -d --build
 <https://qiita.com/papi_tokei/items/c639dc7d1e0f5ad68a74> \
 <https://qiita.com/nanato12/items/ddf26487eb30714251c3>
 
-### flake8設定
+### linter/formatter
 
+<https://qiita.com/sin9270/items/85e2dab4c0144c79987d> \
 <https://qiita.com/fehde/items/723b619013dc86008acc>
+
+### Azure pipelines
+
+<https://stackoverflow.com/questions/71423949/azure-pipelines-proper-way-to-use-poetry>

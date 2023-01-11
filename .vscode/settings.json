@@ -8,16 +8,19 @@
     "files.trimTrailingWhitespace": true,
     "workbench.iconTheme": "material-icon-theme",
     "workbench.colorTheme": "GitHub Dark",
-    "python.formatting.provider": "black",
-    "python.formatting.blackArgs": [
-        "--line-length",
-        "119"
-    ],
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": false,
+    "python.linting.lintOnSave": true,
     "python.linting.flake8Enabled": true,
     "python.linting.flake8CategorySeverity.E": "Information",
     "python.linting.flake8CategorySeverity.F": "Warning",
     "python.linting.flake8Args": [
         "--max-line-length",
+        "119"
+    ],
+    "python.formatting.provider": "black",
+    "python.formatting.blackArgs": [
+        "--line-length",
         "119"
     ],
     "isort.check": true,

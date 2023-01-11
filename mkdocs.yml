@@ -1,0 +1,7 @@
+site_name: MkDocs Test Site
+docs_dir: docs
+use_directory_urls: false
+
+theme:
+  name: material
+  language: ja
