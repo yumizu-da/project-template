@@ -27,6 +27,7 @@ docker-compose up -d --build
 ### 全般
 
 <https://qiita.com/edge-m/items/846715217fc3dd481a84> \
+<https://zenn.dev/zenizeni/books/a64578f98450c2> \
 <https://zenn.dev/alivelimb/articles/20220501-python-env> \
 <https://github.com/arrowkato/my_favorite_python_env> \
 <https://zenn.dev/jdbtisk/articles/e6ed54b38b6a45> \
@@ -49,5 +50,6 @@ docker-compose up -d --build
 
 ### mkdocs
 
+<https://zenn.dev/optimisuke/articles/4489bda5ab29ff#docker-x-makefile> \
 <https://zenn.dev/mebiusbox/articles/81d977a72cee01> \
 <https://timvink.github.io/mkdocs-print-site-plugin/>
