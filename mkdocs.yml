@@ -5,3 +5,15 @@ use_directory_urls: false
 theme:
   name: material
   language: ja
+
+markdown_extensions:
+  - admonition
+
+plugins:
+  - search:
+      lang: "ja"
+  - print-site:
+      print_page_title: ""
+      enumerate_headings: false
+      enumerate_figures: false
+

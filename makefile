@@ -7,4 +7,6 @@ test:
 	pytest
 
 doc:
-	mkdocs serve
+	mkdocs build --clean
+	htmlark site/print_page.html -o docs/documents.html
+	rm -rf ./site
