@@ -50,6 +50,5 @@ docker-compose up -d --build
 
 ### mkdocs
 
-<https://zenn.dev/optimisuke/articles/4489bda5ab29ff#docker-x-makefile> \
 <https://zenn.dev/mebiusbox/articles/81d977a72cee01> \
 <https://timvink.github.io/mkdocs-print-site-plugin/>
