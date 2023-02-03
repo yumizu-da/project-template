@@ -1,4 +1,4 @@
-version: '3.5'
+.devcontainerversion: '3.5'
 services:
 
   # macbook local環境
