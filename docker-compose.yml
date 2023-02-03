@@ -1,6 +1,24 @@
 version: '3.5'
 services:
-  dev:
+
+  # macbook local環境
+  mac:
+    container_name: mizuta_env
+    build:
+      context: .
+      dockerfile: Dockerfile
+    shm_size: '24gb'
+    volumes:
+      - type: bind
+        source: $PWD
+        target: /workspace
+    working_dir: /workspace
+    ports:
+      - "8080:8080"
+    tty: true
+
+  # VM環境
+  vm:
     container_name: mizuta_env
     build:
       context: .
@@ -18,5 +36,5 @@ services:
           - driver: nvidia
             capabilities: [gpu]
     ports:
-      - "8008:8008"
+      - "8080:8080"
     tty: true
