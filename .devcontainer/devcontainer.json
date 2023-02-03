@@ -1,6 +1,6 @@
 {
     "dockerComposeFile": "../docker-compose.yml",
-    "service": "dev",
+    "service": "mac",
     "workspaceFolder": "/workspace",
     "extensions": [
       "MS-CEINTL.vscode-language-pack-ja",

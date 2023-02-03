@@ -16,11 +16,26 @@ VScode × Pythonでの開発環境のテンプレート \
 
 ## Environment
 
+### dockerコンテナ　ビルド & 起動
+
+macローカル環境用
+
 ``` bash
-docker-compose up -d --build
+docker-compose up -d --build mac
 ```
 
-コンテナ作成後VScode左下の`><`ボタンより`Open Folder in Container`でコンテナにアクセス
+VM環境用
+
+``` bash
+docker-compose up -d --build vm
+```
+
+### コンテナにアタッチ
+
+まず`.devcontainer/devcontainer.json`の`service`が作成したコンテナサービス名に設定する \
+前段でmac用コンテナを起動した場合は`mac`, VM用コンテナを起動した場合は`vm`と記載
+
+次にVScode左下の`><`ボタンより`Open Folder in Container`でコンテナにアクセス
 
 ## Appendix
 

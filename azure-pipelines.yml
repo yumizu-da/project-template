@@ -25,12 +25,11 @@ stages:
       inputs:
         command: build
         dockerfile: '$(Build.SourcesDirectory)/Dockerfile'
+        buildContext: '$(Build.SourcesDirectory)'
         arguments: '-t ubuntu:$(Build.BuildId)'
     - script: |
-        docker run -v $(pwd):/workspace ubuntu:$(Build.BuildId) python -m black --check .
-        docker run -v $(pwd):/workspace ubuntu:$(Build.BuildId) python -m isort --check --diff .
-        docker run -v $(pwd):/workspace ubuntu:$(Build.BuildId) python -m mypy .
+        docker run -v $(pwd):/workspace ubuntu:$(Build.BuildId) make lint
       displayName: 'Run Linter and Type hints'
     - script: |
-        docker run -v $(pwd):/workspace ubuntu:$(Build.BuildId) python -m pytest
+        docker run -v $(pwd):/workspace ubuntu:$(Build.BuildId) make test
       displayName: 'Run PyTest'

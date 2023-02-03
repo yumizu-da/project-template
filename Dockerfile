@@ -1,8 +1,4 @@
-FROM python:3.9.16-slim
-
-RUN apt-get update && \
-    apt-get install --no-install-recommends -y curl make && \
-    apt-get clean
+FROM python:3.9.16
 
 ENV PYTHONPATH "${PYTHONPATH}:/workspace"
 WORKDIR /workspace

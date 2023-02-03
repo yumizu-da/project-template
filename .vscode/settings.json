@@ -7,7 +7,6 @@
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
     "workbench.iconTheme": "material-icon-theme",
-    "workbench.colorTheme": "GitHub Dark",
     "python.linting.enabled": true,
     "python.linting.pylintEnabled": false,
     "python.linting.lintOnSave": true,
@@ -27,5 +26,9 @@
     "editor.codeActionsOnSave": {
         "source.organizeImports": true
     },
-    "python.linting.mypyEnabled": true
+    "python.linting.mypyEnabled": true,
+    "markdownlint.config": {
+        "MD024": false,
+        "MD046": false
+        }
 }
