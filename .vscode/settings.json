@@ -29,6 +29,7 @@
     "python.linting.mypyEnabled": true,
     "markdownlint.config": {
         "MD024": false,
+        "MD033": false,
         "MD046": false
         }
 }

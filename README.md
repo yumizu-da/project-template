@@ -24,6 +24,23 @@ macローカル環境用
 docker-compose up -d --build mac
 ```
 
+<details><summary>macで以下のエラーが発生した場合</summary>
+
+macで以下のエラーが出ることがある
+
+``` bash
+failed to solve with frontend dockerfile.v0: failed to create LLB definition: rpc error: code = Unknown desc = error getting credentials - err: exec: "docker-credential-desktop": executable file not found in $PATH, out: ``
+```
+
+その場合は以下の手順で`~/.docker/config.json`を修正すると解決する
+
+- `sudo vi ~/.docker/config.json`でファイルを開く
+- `credsStore` -> `credStore`に変更し保存
+
+<https://stackoverflow.com/a/74413229>
+
+</details>
+
 VM環境用
 
 ``` bash
