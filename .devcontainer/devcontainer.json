@@ -1,6 +1,6 @@
 {
     "dockerComposeFile": "../docker-compose.yml",
-    "service": "mac",
+    "service": "dev",
     "workspaceFolder": "/workspace",
     "extensions": [
       "MS-CEINTL.vscode-language-pack-ja",
@@ -41,6 +41,22 @@
       "ipatalas.vscode-sprint-planner",
       "ms-vscode.azure-repos",
       "ms-azuretools.vscode-azureresourcegroups",
-      "ms-azuretools.vscode-azurestorage"
-	]
+      "ms-azuretools.vscode-azurestorage",
+      "gencay.vscode-chatgpt",
+      "nemesv.copy-file-name",
+      "janisdd.vscode-edit-csv",
+      "mhutchie.git-graph",
+      "donjayamanne.githistory",
+      "felipecaputo.git-project-manager",
+      "GitHub.vscode-pull-request-github",
+      "eamodio.gitlens",
+      "TakumiI.markdowntable",
+      "christian-kohler.path-intellisense",
+      "TabNine.tabnine-vscode",
+      "Gruntfuggly.todo-tree",
+      "ms-python.isort",
+      "ms-vscode.live-server",
+      "ritwickdey.LiveServer",
+      "yzhang.markdown-all-in-one"
+  ]
 }
