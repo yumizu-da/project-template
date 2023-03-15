@@ -69,7 +69,8 @@ docker-compose up -d --build vm
 
 <https://qiita.com/yamaguchi2000/items/76060c08764ce4c704f9> \
 <https://qiita.com/papi_tokei/items/c639dc7d1e0f5ad68a74> \
-<https://qiita.com/nanato12/items/ddf26487eb30714251c3>
+<https://qiita.com/nanato12/items/ddf26487eb30714251c3> \
+<https://maasaablog.com/integrated-development-environment/visual-studio-code/923/>
 
 ### linter/formatter
 
