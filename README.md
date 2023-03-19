@@ -7,6 +7,7 @@ VScode × Pythonでの開発環境のテンプレート \
 - VScode(devcontainer.json, setting.json)
 - docker
 - poetry
+- flake8
 - black
 - isort
 - mypy
