@@ -17,7 +17,7 @@ VScode × Pythonでの開発環境のテンプレート \
 
 ## Environment
 
-### dockerコンテナ　ビルド & 起動
+### dockerコンテナ ビルド & 起動
 
 macローカル環境用
 
