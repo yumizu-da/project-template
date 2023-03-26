@@ -18,7 +18,7 @@ services:
     tty: true
 
   # VM環境
-  vm:
+  ubuntu:
     container_name: mizuta_env
     build:
       context: .

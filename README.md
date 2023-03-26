@@ -42,16 +42,16 @@ failed to solve with frontend dockerfile.v0: failed to create LLB definition: rp
 
 </details>
 
-VM環境用
+ubuntu環境用
 
 ``` bash
-docker-compose up -d --build vm
+docker-compose up -d --build ubuntu
 ```
 
 ### コンテナにアタッチ
 
 まず`.devcontainer/devcontainer.json`の`service`が作成したコンテナサービス名に設定する \
-前段でmac用コンテナを起動した場合は`mac`, VM用コンテナを起動した場合は`vm`と記載
+前段でmac用コンテナを起動した場合は`mac`, ubuntu用コンテナを起動した場合は`ubuntu`と記載
 
 次にVScode左下の`><`ボタンより`Open Folder in Container`でコンテナにアクセス
 
