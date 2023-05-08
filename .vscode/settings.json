@@ -31,6 +31,12 @@
         "MD007": false,
         "MD024": false,
         "MD033": false,
+        "MD041": false,
         "MD046": false
-        }
+    },
+    "python.testing.pytestArgs": [
+        "tests"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true
 }
