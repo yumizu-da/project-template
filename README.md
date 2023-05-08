@@ -1,16 +1,39 @@
-# Mizuta env
+# template-mzt-project
 
-VScode × Pythonでの開発環境のテンプレート \
-以下のツールで構成
+<div align="center">
+    <img src="logo.png">
+</div>
+
+<div align="center">
+    <img alt="python versions" src="https://img.shields.io/badge/python-3.8%20%7C%203.9-blue">
+    <a href="https://github.com/psf/black">
+        <img alt="black" src="https://img.shields.io/badge/code%20style-black-000000.svg">
+    </a>
+    <a href="https://github.com/PyCQA/flake8">
+        <img alt="flake8" src="https://img.shields.io/badge/code%20style-flake8-black">
+    </a>
+    <a href="https://pycqa.github.io/isort">
+        <img alt="isort" src="https://img.shields.io/badge/%20imports-isort-%231674b1?style=flat&labelColor=ef8336">
+    </a>
+    <a href="https://github.com/python/mypy">
+        <img alt="mypy" src="https://img.shields.io/badge/typing-mypy-blue">
+    </a>
+</div>
+<br />
+
+VScode × Pythonでの開発環境のテンプレート
+
+## Libraries in use
 
 - python3.9
-- VScode(devcontainer.json, setting.json)
+- VSCode(devcontainer.json, setting.json)
 - docker
 - poetry
 - flake8
 - black
 - isort
 - mypy
+- mdformat
 - pytest
 - azure-pipelines
 - mkdocs
@@ -19,17 +42,17 @@ VScode × Pythonでの開発環境のテンプレート \
 
 ### dockerコンテナ ビルド & 起動
 
-macローカル環境用
+CPU環境用
 
-``` bash
-docker-compose up -d --build mac
+```bash
+docker-compose up -d --build cpu
 ```
 
 <details><summary>macで以下のエラーが発生した場合</summary>
 
 macで以下のエラーが出ることがある
 
-``` bash
+```bash
 failed to solve with frontend dockerfile.v0: failed to create LLB definition: rpc error: code = Unknown desc = error getting credentials - err: exec: "docker-credential-desktop": executable file not found in $PATH, out: ``
 ```
 
@@ -42,16 +65,16 @@ failed to solve with frontend dockerfile.v0: failed to create LLB definition: rp
 
 </details>
 
-ubuntu環境用
+GPU環境用
 
-``` bash
-docker-compose up -d --build ubuntu
+```bash
+docker-compose up -d --build gpu
 ```
 
 ### コンテナにアタッチ
 
 まず`.devcontainer/devcontainer.json`の`service`が作成したコンテナサービス名に設定する \
-前段でmac用コンテナを起動した場合は`mac`, ubuntu用コンテナを起動した場合は`ubuntu`と記載
+前段でCPU環境用を起動した場合は`cpu`, GPU環境用を起動した場合は`gpu`と記載
 
 次にVScode左下の`><`ボタンより`Open Folder in Container`でコンテナにアクセス
 
@@ -59,6 +82,7 @@ docker-compose up -d --build ubuntu
 
 ### 全般
 
+<https://github.com/cvpaperchallenge/Ascender> \
 <https://qiita.com/edge-m/items/846715217fc3dd481a84> \
 <https://zenn.dev/zenizeni/books/a64578f98450c2> \
 <https://zenn.dev/alivelimb/articles/20220501-python-env> \
