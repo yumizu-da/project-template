@@ -1,10 +1,10 @@
 # template-mzt-project
 
-<p align="center">
-    <img src="./logo.png">
-</p>
+<center>
+    <img src="logo.png", alt="logo">
+</center>
 
-<p align="center">
+<div align="center">
     <img alt="python versions" src="https://img.shields.io/badge/python-3.8%20%7C%203.9-blue">
     <a href="https://github.com/psf/black">
         <img alt="black" src="https://img.shields.io/badge/code%20style-black-000000.svg">
@@ -18,7 +18,7 @@
     <a href="https://github.com/python/mypy">
         <img alt="mypy" src="https://img.shields.io/badge/typing-mypy-blue">
     </a>
-</p>
+</div>
 <br />
 
 VScode × Pythonでの開発環境のテンプレート
