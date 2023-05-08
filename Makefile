@@ -1,17 +1,27 @@
+.PHONY: format
+format:
+	poetry run black .
+	poetry run isort .
+	poetry run mdformat *.md
+
+.PHONY: lint
 lint:
-	black --check .
-	isort --check --diff .
-	mypy .
+	poetry run flake8 .
+	poetry run black --check .
+	poetry run isort --check --diff .
+	poetry run mypy .
+	poetry run mdformat --check *.md
 
+.PHONY: test
 test:
-	pytest
+	poetry run pytest tests
 
-# ドキュメントをwebブラウザに表示 http://127.0.0.1:7000/
+.PHONY: serve_doc
 serve_doc:
-	mkdocs serve
+	poetry run mkdocs serve
 
-# export ドキュメント
+.PHONY: export_doc
 export_doc:
-	mkdocs build --clean
-	htmlark site/print_page.html -o docs/documents.html
-	rm -rf ./site
+	poetry run mkdocs build --clean
+	poetry run htmlark site/print_page.html -o docs/documents.html
+	poetry run rm -rf ./site

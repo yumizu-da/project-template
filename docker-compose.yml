@@ -1,13 +1,11 @@
 version: '3.5'
 services:
-
-  # macbook local環境
-  mac:
-    container_name: mizuta_env
+  cpu:
+    container_name: project_name.cpu
     build:
       context: .
       dockerfile: Dockerfile
-    shm_size: '12gb'
+    shm_size: '28gb'
     volumes:
       - type: bind
         source: $PWD
@@ -16,14 +14,12 @@ services:
     ports:
       - "8080:8080"
     tty: true
-
-  # VM環境
-  ubuntu:
-    container_name: mizuta_env
+  gpu:
+    container_name: project_name.gpu
     build:
       context: .
       dockerfile: Dockerfile
-    shm_size: '96gb'
+    shm_size: '28gb'
     volumes:
       - type: bind
         source: $PWD
@@ -33,8 +29,8 @@ services:
       resources:
         reservations:
           devices:
-          - driver: nvidia
-            capabilities: [gpu]
+            - driver: nvidia
+              capabilities: [ gpu ]
     ports:
       - "8080:8080"
     tty: true
