@@ -1,8 +1,8 @@
 # template-mzt-project
 
-<center>
-    <img src="logo.png", alt="logo">
-</center>
+<div style="text-align:center">
+    <img src="./logo.png" alt="logo">
+</div>
 
 <div align="center">
     <img alt="python versions" src="https://img.shields.io/badge/python-3.8%20%7C%203.9-blue">
