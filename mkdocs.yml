@@ -1,5 +1,5 @@
-site_name: template_mizuta_env
-repo_url: https://dev.azure.com/jrw-data/jrw-cbm-team/_git/template_mizuta_env
+site_name: template_mzt-project
+repo_url: https://dev.azure.com/jrw-data/jrw-cbm-team/_git/template_mzt-project
 use_directory_urls: false
 docs_dir: docs
 dev_addr: '127.0.0.1:7000'

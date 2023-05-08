@@ -7,25 +7,25 @@
 </center>
 
 <div align="center">
-    <img alt="python versions" src="https://img.shields.io/badge/python-3.8%20%7C%203.9-blue">
+    <img alt="python versions" src="https://img.shields.io/badge/python-3.8%20%7C%203.9-blue?labelColor=5B7282&color=1e94f3">
     <a href="https://github.com/psf/black">
-        <img alt="black" src="https://img.shields.io/badge/code%20style-black-000000.svg">
+        <img alt="black" src="https://img.shields.io/badge/code%20style-black-000000.svg?labelColor=5B7282&color=1e94f3">
     </a>
     <a href="https://github.com/PyCQA/flake8">
-        <img alt="flake8" src="https://img.shields.io/badge/code%20style-flake8-black">
+        <img alt="flake8" src="https://img.shields.io/badge/code%20style-flake8-black?labelColor=5B7282&color=1e94f3">
     </a>
     <a href="https://pycqa.github.io/isort">
-        <img alt="isort" src="https://img.shields.io/badge/%20imports-isort-%231674b1?style=flat&labelColor=ef8336">
+        <img alt="isort" src="https://img.shields.io/badge/%20imports-isort-%231674b1?labelColor=5B7282&color=1e94f3">
     </a>
     <a href="https://github.com/python/mypy">
-        <img alt="mypy" src="https://img.shields.io/badge/typing-mypy-blue">
+        <img alt="mypy" src="https://img.shields.io/badge/typing-mypy-blue?labelColor=5B7282&color=1e94f3">
     </a>
 </div>
 <br />
 
-VScode × Pythonでの開発環境のテンプレート
+VSCode × Pythonでの開発環境のテンプレート
 
-## Libraries in use
+## Used libraries
 
 - python3.9
 - VSCode(devcontainer.json, setting.json)
