@@ -6,7 +6,7 @@ format:
 
 .PHONY: lint
 lint:
-	poetry run flake8 .
+	poetry run pflake8 .
 	poetry run black --check .
 	poetry run isort --check --diff .
 	poetry run mypy .
