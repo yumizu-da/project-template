@@ -2,28 +2,28 @@
 
 <center>
 
-![image.png](logo.png)
+![image.png](docs/logos/facebook_cover_photo_2.png)
 
 </center>
 
 <div align="center">
-    <img alt="python versions" src="https://img.shields.io/badge/python-3.8%20%7C%203.9-blue?labelColor=5B7282&color=1e94f3">
+    <img alt="python versions" src="https://img.shields.io/badge/python-3.8%20%7C%203.9-blue?color=00adb5">
     <a href="https://github.com/psf/black">
-        <img alt="black" src="https://img.shields.io/badge/code%20style-black-000000.svg?labelColor=5B7282&color=1e94f3">
+        <img alt="black" src="https://img.shields.io/badge/code%20style-black-000000.svg?color=00adb5">
     </a>
     <a href="https://github.com/PyCQA/flake8">
-        <img alt="flake8" src="https://img.shields.io/badge/code%20style-flake8-black?labelColor=5B7282&color=1e94f3">
+        <img alt="flake8" src="https://img.shields.io/badge/code%20style-flake8-black?color=00adb5">
     </a>
     <a href="https://pycqa.github.io/isort">
-        <img alt="isort" src="https://img.shields.io/badge/%20imports-isort-%231674b1?labelColor=5B7282&color=1e94f3">
+        <img alt="isort" src="https://img.shields.io/badge/%20imports-isort-%231674b1?color=00adb5">
     </a>
     <a href="https://github.com/python/mypy">
-        <img alt="mypy" src="https://img.shields.io/badge/typing-mypy-blue?labelColor=5B7282&color=1e94f3">
+        <img alt="mypy" src="https://img.shields.io/badge/typing-mypy-blue?color=00adb5">
     </a>
 </div>
 <br />
 
-VSCode × Pythonでの開発環境のテンプレート
+<center>VSCode × Pythonでの機械学習リポジトリのテンプレート🥳🥳🥳</center>
 
 ## Used libraries
 
