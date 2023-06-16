@@ -35,7 +35,7 @@ VSCode × Docker × Pythonでの機械学習リポジトリのテンプレート
 後述の方法でセッティングすることで, VSCodeの拡張機能, linter, formatterなどの環境が自動的に整います
 
 ※ 使用する際は適宜`README.md`や`docker-compose.yml`等を編集してください \
-※ 自由気ままに週1回程度の頻度でアップデートしていきます
+※ 自由気ままにアップデートしていきます
 
 ## Used libraries
 
