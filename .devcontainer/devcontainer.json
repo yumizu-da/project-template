@@ -25,8 +25,6 @@
     "ipatalas.vscode-sprint-planner",
     // Python
     "ms-python.python",
-    "ms-python.flake8",
-    "ms-python.black-formatter",
     "ms-python.isort",
     "ms-python.vscode-pylance",
     "ms-toolsai.jupyter",
@@ -70,6 +68,7 @@
     "janisdd.vscode-edit-csv",
     // Other
     "ms-vscode.live-server",
-    "ritwickdey.LiveServer"
+    "ritwickdey.LiveServer",
+    "genieai.chatgpt-vscode"
   ]
 }
