@@ -9,8 +9,6 @@
 	"editor.guides.bracketPairs": true,
 	"editor.bracketPairColorization.enabled": true,
 	"editor.bracketPairColorization.independentColorPoolPerBracketType": true,
-	"editor.detectIndentation": false,
-	"editor.insertSpaces": false,
 	"editor.wordWrap": "on",
 	"files.autoSave": "afterDelay",
 	"files.insertFinalNewline": true,
