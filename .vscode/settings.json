@@ -1,42 +1,67 @@
 {
-    "files.autoSave": "afterDelay",
-    "editor.fontSize": 12,
-    "editor.formatOnSave": true,
-    "editor.renderWhitespace": "boundary",
-    "editor.cursorStyle": "line",
-    "files.insertFinalNewline": true,
-    "files.trimTrailingWhitespace": true,
-    "workbench.iconTheme": "material-icon-theme",
-    "python.linting.enabled": true,
-    "python.linting.pylintEnabled": false,
-    "python.linting.lintOnSave": true,
-    "python.linting.flake8Enabled": true,
-    "python.linting.flake8CategorySeverity.E": "Information",
-    "python.linting.flake8CategorySeverity.F": "Warning",
-    "python.linting.flake8Args": [
-        "--max-line-length",
-        "119"
-    ],
-    "python.formatting.provider": "black",
-    "python.formatting.blackArgs": [
-        "--line-length",
-        "119"
-    ],
-    "isort.check": true,
-    "editor.codeActionsOnSave": {
-        "source.organizeImports": true
-    },
-    "python.linting.mypyEnabled": true,
-    "markdownlint.config": {
-        "MD007": false,
-        "MD024": false,
-        "MD033": false,
-        "MD041": false,
-        "MD046": false
-    },
-    "python.testing.pytestArgs": [
-        "tests"
-    ],
-    "python.testing.unittestEnabled": false,
-    "python.testing.pytestEnabled": true
+	"editor.fontSize": 12,
+	"editor.tabSize": 4,
+	"editor.formatOnSave": true,
+	"editor.renderWhitespace": "boundary",
+	"editor.cursorStyle": "line",
+	"editor.formatOnType": true,
+	"editor.formatOnPaste": true,
+	"editor.guides.bracketPairs": true,
+	"editor.bracketPairColorization.enabled": true,
+	"editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+	"editor.detectIndentation": false,
+	"editor.insertSpaces": false,
+	"editor.wordWrap": "on",
+	"files.autoSave": "afterDelay",
+	"files.insertFinalNewline": true,
+	"files.trimFinalNewlines": true,
+	"files.trimTrailingWhitespace": true,
+	"workbench.colorTheme": "GitHub Dark",
+	"workbench.iconTheme": "material-icon-theme",
+	"workbench.tree.renderIndentGuides": "always",
+	"workbench.editor.untitled.hint": "hidden",
+	"workbench.reduceMotion": "on",
+	"workbench.editor.tabSizing": "shrink",
+	"workbench.editor.enablePreview": false,
+	"workbench.editor.enablePreviewFromQuickOpen": false,
+	"terminal.integrated.copyOnSelection": true,
+	"terminal.integrated.rightClickBehavior": "paste",
+	"extensions.ignoreRecommendations": false,
+	"explorer.compactFolders": false,
+	"codesnap.shutterAction": "copy",
+	"python.analysis.inlayHints.functionReturnTypes": true,
+	"python.analysis.inlayHints.variableTypes": true,
+	"python.linting.enabled": true,
+	"python.linting.pylintEnabled": false,
+	"python.linting.lintOnSave": true,
+	"python.linting.flake8Enabled": true,
+	"python.linting.flake8CategorySeverity.E": "Information",
+	"python.linting.flake8CategorySeverity.F": "Warning",
+	"python.linting.flake8Args": [
+		"--max-line-length",
+		"119"
+	],
+	"python.formatting.provider": "black",
+	"python.formatting.blackArgs": [
+		"--line-length",
+		"119"
+	],
+	"isort.check": true,
+	"editor.codeActionsOnSave": {
+		"source.organizeImports": true
+	},
+	"python.linting.mypyEnabled": true,
+	"markdownlint.config": {
+		"MD007": false,
+		"MD024": false,
+		"MD033": false,
+		"MD041": false,
+		"MD046": false
+	},
+	"python.testing.pytestArgs": [
+		"tests"
+	],
+	"python.testing.unittestEnabled": false,
+	"python.testing.pytestEnabled": true,
+	"python.analysis.typeCheckingMode": "off",
 }
