@@ -13,6 +13,7 @@ mkdocs-material = "^9.0.3"
 mkdocs-print-site-plugin = "^2.3.4"
 htmlark = "^1.0.0"
 mkdocs-minify-plugin = "^0.6.2"
+numpy = "1.24.1"
 
 [build-system]
 requires = ["poetry-core"]
