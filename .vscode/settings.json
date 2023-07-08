@@ -20,8 +20,6 @@
 	"workbench.editor.untitled.hint": "hidden",
 	"workbench.reduceMotion": "on",
 	"workbench.editor.tabSizing": "shrink",
-	"workbench.editor.enablePreview": false,
-	"workbench.editor.enablePreviewFromQuickOpen": false,
 	"terminal.integrated.copyOnSelection": true,
 	"terminal.integrated.rightClickBehavior": "paste",
 	"extensions.ignoreRecommendations": false,
