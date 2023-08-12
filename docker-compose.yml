@@ -11,8 +11,6 @@ services:
         source: $PWD
         target: /workspace
     working_dir: /workspace
-    ports:
-      - "8080:8080"
     tty: true
   gpu:
     container_name: project_name.gpu
@@ -31,6 +29,4 @@ services:
           devices:
             - driver: nvidia
               capabilities: [ gpu ]
-    ports:
-      - "8080:8080"
     tty: true
