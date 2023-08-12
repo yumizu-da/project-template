@@ -50,7 +50,6 @@ VSCode × Docker × Pythonでの機械学習リポジトリのテンプレート
 - mdformat
 - pytest
 - azure-pipelines
-- mkdocs
 
 ## Environment
 
