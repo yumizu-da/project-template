@@ -130,8 +130,3 @@ docker-compose up -d --build gpu
 ### Azure pipelines
 
 <https://stackoverflow.com/questions/71423949/azure-pipelines-proper-way-to-use-poetry>
-
-### mkdocs
-
-<https://zenn.dev/mebiusbox/articles/81d977a72cee01> \
-<https://timvink.github.io/mkdocs-print-site-plugin/>
