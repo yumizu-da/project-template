@@ -10,4 +10,5 @@ RUN curl -sSL https://install.python-poetry.org/ | python - && \
     ln -s /opt/poetry/bin/poetry && \
     poetry config virtualenvs.create false
 COPY pyproject.toml .
+COPY poetry.lock .
 RUN poetry install
