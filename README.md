@@ -58,7 +58,7 @@ VSCode × Docker × Pythonでの機械学習リポジトリのテンプレート
 CPU環境用
 
 ```bash
-docker-compose up -d --build cpu
+docker compose up -d --build cpu
 ```
 
 <details><summary>macで以下のエラーが発生した場合</summary>
@@ -81,7 +81,7 @@ failed to solve with frontend dockerfile.v0: failed to create LLB definition: rp
 GPU環境用
 
 ```bash
-docker-compose up -d --build gpu
+docker compose up -d --build gpu
 ```
 
 ### コンテナにアタッチ
