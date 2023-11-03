@@ -119,7 +119,8 @@ docker compose up -d --build gpu
 <https://zenn.dev/yumemi_inc/articles/396265425c9740> \
 <https://zenn.dev/yosemat/articles/36638f17e9ded8> \
 <https://zenn.dev/necscat/articles/d0946fec7f84be> \
-<https://de-milestones.com/vscode-how-to-setup-recommended-tools/>
+<https://de-milestones.com/vscode-how-to-setup-recommended-tools/> \
+<https://qiita.com/siruku6/items/6a8412c41616b558df66>
 
 ### linter/formatter
 
