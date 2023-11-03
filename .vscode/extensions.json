@@ -20,11 +20,15 @@
 		// Python
 		"ms-python.python",
 		"ms-python.vscode-pylance",
-		"ms-python.isort",
 		"ms-toolsai.jupyter",
 		"ms-toolsai.vscode-jupyter-cell-tags",
 		"ms-toolsai.jupyter-renderers",
 		"ms-toolsai.vscode-jupyter-slideshow",
+		// formatter & linter
+		"ms-python.flake8",
+		"ms-python.black-formatter",
+		"matangover.mypy",
+		"ms-python.isort",
 		// Git
 		"GitHub.copilot",
 		"GitHub.vscode-pull-request-github",
@@ -67,10 +71,4 @@
 		"ms-vsliveshare.vsliveshare",
 		"adpyke.codesnap"
 	],
-	"unwantedRecommendations": [
-		// poetryでインストールしたflake8, black, isort, mypyと競合するため非推奨
-		"ms-python.flake8",
-		"ms-python.black-formatter",
-		"matangover.mypy"
-	]
 }

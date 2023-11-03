@@ -17,7 +17,6 @@
 	"workbench.colorTheme": "GitHub Dark",
 	"workbench.iconTheme": "material-icon-theme",
 	"workbench.tree.renderIndentGuides": "always",
-	"workbench.editor.untitled.hint": "hidden",
 	"workbench.reduceMotion": "on",
 	"workbench.editor.tabSizing": "shrink",
 	"terminal.integrated.copyOnSelection": true,
@@ -25,26 +24,26 @@
 	"extensions.ignoreRecommendations": false,
 	"explorer.compactFolders": false,
 	"codesnap.shutterAction": "copy",
-	"python.linting.enabled": true,
-	"python.linting.pylintEnabled": false,
-	"python.linting.lintOnSave": true,
-	"python.linting.flake8Enabled": true,
-	"python.linting.flake8CategorySeverity.E": "Information",
-	"python.linting.flake8CategorySeverity.F": "Warning",
-	"python.linting.flake8Args": [
-		"--max-line-length",
-		"119"
+	"[python]": {
+		"editor.defaultFormatter": "ms-python.black-formatter",
+		"editor.formatOnSave": true,
+		"editor.codeActionsOnSave": {
+			"source.organizeImports": true
+		},
+	},
+	"flake8.args": [
+		"--max-line-length=119",
 	],
-	"python.formatting.provider": "black",
-	"python.formatting.blackArgs": [
-		"--line-length",
-		"119"
+	"mypy-type-checker.args": [
+		"--ignore-missing-imports",
+	],
+	"isort.args": [
+		"black",
 	],
 	"isort.check": true,
 	"editor.codeActionsOnSave": {
 		"source.organizeImports": true
 	},
-	"python.linting.mypyEnabled": true,
 	"markdownlint.config": {
 		"MD007": false,
 		"MD024": false,
@@ -57,4 +56,5 @@
 	],
 	"python.testing.unittestEnabled": false,
 	"python.testing.pytestEnabled": true,
+	"workbench.editor.empty.hint": "hidden",
 }
