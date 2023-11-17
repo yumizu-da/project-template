@@ -14,7 +14,6 @@
 	"files.insertFinalNewline": true,
 	"files.trimFinalNewlines": true,
 	"files.trimTrailingWhitespace": true,
-	"workbench.colorTheme": "GitHub Dark",
 	"workbench.iconTheme": "material-icon-theme",
 	"workbench.tree.renderIndentGuides": "always",
 	"workbench.reduceMotion": "on",
@@ -24,6 +23,8 @@
 	"extensions.ignoreRecommendations": false,
 	"explorer.compactFolders": false,
 	"codesnap.shutterAction": "copy",
+	"workbench.editor.enablePreview": true,
+	"workbench.editor.enablePreviewFromQuickOpen": true,
 	"[python]": {
 		"editor.defaultFormatter": "ms-python.black-formatter",
 		"editor.formatOnSave": true,
@@ -38,7 +39,8 @@
 		"--ignore-missing-imports",
 	],
 	"isort.args": [
-		"black",
+		"--profile",
+		"black"
 	],
 	"isort.check": true,
 	"editor.codeActionsOnSave": {
