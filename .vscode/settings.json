@@ -26,21 +26,16 @@
 	"workbench.editor.enablePreview": true,
 	"workbench.editor.enablePreviewFromQuickOpen": true,
 	"[python]": {
-		"editor.defaultFormatter": "ms-python.black-formatter",
+		"editor.defaultFormatter": "charliermarsh.ruff",
 		"editor.formatOnSave": true,
 		"editor.codeActionsOnSave": {
-			"source.organizeImports": true
+			"source.organizeImports": "explicit"
 		},
 	},
-	"flake8.args": [
-		"--max-line-length=119",
-	],
 	"mypy-type-checker.args": [
 		"--ignore-missing-imports",
-	],
-	"isort.args": [
-		"--profile",
-		"black"
+		"plugins",
+		"pydantic.mypy"
 	],
 	"isort.check": true,
 	"editor.codeActionsOnSave": {
