@@ -1,14 +1,11 @@
 .PHONY: format
 format:
-	poetry run black .
-	poetry run isort .
+	poetry run ruff format .
 	poetry run mdformat *.md
 
 .PHONY: lint
 lint:
-	poetry run pflake8 .
-	poetry run black --check .
-	poetry run isort --check --diff .
+	poetry run ruff check .
 	poetry run mypy .
 	poetry run mdformat --check *.md
 

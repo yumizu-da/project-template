@@ -1,5 +1,5 @@
 {
-	"dockerComposeFile": "../docker-compose.yml",
+	"dockerComposeFile": "../../compose.yml",
 	"service": "gpu",
 	"workspaceFolder": "/workspace",
 	"containerEnv": {
