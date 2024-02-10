@@ -1,0 +1,21 @@
+FROM nvidia/cuda:12.0.1-devel-ubuntu22.04
+
+ENV DEBIAN_FRONTEND=noninteractive
+RUN apt-get update && apt-get install -y \
+    curl \
+    git \
+    python3.10 \
+    python3-pip \
+    && rm -rf /var/lib/apt/lists/*
+
+ENV PYTHONPATH="${PYTHONPATH}:/workspace"
+WORKDIR /workspace
+
+ENV POETRY_HOME=/opt/poetry
+RUN curl -sSL https://install.python-poetry.org/ | python3 - --version 1.7.1 && \
+    cd /usr/bin && \
+    ln -s /opt/poetry/bin/poetry && \
+    poetry config virtualenvs.create false
+COPY pyproject.toml .
+# COPY poetry.lock .
+RUN poetry install
