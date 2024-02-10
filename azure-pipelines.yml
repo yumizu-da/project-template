@@ -24,7 +24,7 @@ stages:
       displayName: Build an image
       inputs:
         command: build
-        dockerfile: '$(Build.SourcesDirectory)/Dockerfile'
+        dockerfile: '$(Build.SourcesDirectory)/docker/Dockerfile.cpu'
         buildContext: '$(Build.SourcesDirectory)'
         arguments: '-t ubuntu:$(Build.BuildId)'
     - script: |
