@@ -25,9 +25,7 @@
 		"ms-toolsai.jupyter-renderers",
 		"ms-toolsai.vscode-jupyter-slideshow",
 		// formatter & linter
-		"ms-python.flake8",
-		"ms-python.black-formatter",
-		"ms-python.isort",
+		"charliermarsh.ruff",
 		"ms-python.mypy-type-checker",
 		// Git
 		"GitHub.copilot",
