@@ -4,7 +4,7 @@ services:
     container_name: project_name.cpu
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: docker/Dockerfile.cpu
     shm_size: '28gb'
     volumes:
       - type: bind
@@ -16,7 +16,7 @@ services:
     container_name: project_name.gpu
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: docker/Dockerfile.gpu
     shm_size: '28gb'
     volumes:
       - type: bind
