@@ -25,14 +25,20 @@
 	"explorer.compactFolders": false,
 	"codesnap.shutterAction": "copy",
 	"[python]": {
-		"editor.defaultFormatter": "charliermarsh.ruff",
+		"editor.defaultFormatter": "ms-python.black-formatter",
 		"editor.formatOnSave": true,
 		"editor.codeActionsOnSave": {
 			"source.organizeImports": true
 		},
 	},
+	"flake8.args": [
+		"--max-line-length=119",
+	],
 	"mypy-type-checker.args": [
 		"--ignore-missing-imports",
+	],
+	"isort.args": [
+		"black",
 	],
 	"isort.check": true,
 	"editor.codeActionsOnSave": {
