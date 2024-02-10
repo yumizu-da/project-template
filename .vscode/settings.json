@@ -28,16 +28,15 @@
 		"editor.defaultFormatter": "charliermarsh.ruff",
 		"editor.formatOnSave": true,
 		"editor.codeActionsOnSave": {
-			"source.organizeImports": "explicit"
+			"source.organizeImports": true
 		},
 	},
 	"mypy-type-checker.args": [
 		"--ignore-missing-imports",
-		"plugins",
-		"pydantic.mypy"
 	],
+	"isort.check": true,
 	"editor.codeActionsOnSave": {
-		"source.organizeImports": "explicit"
+		"source.organizeImports": true
 	},
 	"markdownlint.config": {
 		"MD007": false,
