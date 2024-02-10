@@ -39,7 +39,7 @@
 	],
 	"isort.check": true,
 	"editor.codeActionsOnSave": {
-		"source.organizeImports": true
+		"source.organizeImports": "explicit"
 	},
 	"markdownlint.config": {
 		"MD007": false,
