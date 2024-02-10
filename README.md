@@ -7,15 +7,12 @@
 </center>
 
 <div align="center">
-    <img alt="python versions" src="https://img.shields.io/badge/python-3.8%20%7C%203.9-blue?color=00adb5">
-    <a href="https://github.com/psf/black">
-        <img alt="black" src="https://img.shields.io/badge/code%20style-black-000000.svg?color=00adb5">
+    <img alt="python versions" src="https://img.shields.io/badge/python-3.12-blue?color=00adb5">
+    <a href="https://opensource.org/licenses/MIT">
+        <img alt="MIT License" src="https://img.shields.io/badge/license-MIT-green?color=00adb5">
     </a>
     <a href="https://github.com/PyCQA/flake8">
-        <img alt="flake8" src="https://img.shields.io/badge/code%20style-flake8-black?color=00adb5">
-    </a>
-    <a href="https://pycqa.github.io/isort">
-        <img alt="isort" src="https://img.shields.io/badge/%20imports-isort-%231674b1?color=00adb5">
+        <img alt="ruff" src="https://img.shields.io/badge/code%20style-ruff-000000.svg?color=00adb5">
     </a>
     <a href="https://github.com/python/mypy">
         <img alt="mypy" src="https://img.shields.io/badge/typing-mypy-blue?color=00adb5">
@@ -32,20 +29,18 @@ VSCode × Docker × Pythonでの機械学習リポジトリのテンプレート
 ## Description
 
 機械学習プロジェクトを進める際に使用するテンプレートリポジトリです \
-後述の方法でセッティングすることで, VSCodeの拡張機能, linter, formatterなどの環境が自動的に整います
+後述の方法でセッティングすることで, VSCodeの拡張機能, linter, formatterなどの環境が自動的に整えることができます
 
 ※ 使用する際は適宜`README.md`や`docker-compose.yml`等を編集してください \
 ※ 自由気ままにアップデートしていきます
 
 ## Used libraries
 
-- python3.9
+- python3.12
 - VSCode(devcontainer.json, setting.json, extensions.json)
 - docker
 - poetry
-- flake8
-- black
-- isort
+- Ruff
 - mypy
 - mdformat
 - pytest
@@ -86,9 +81,6 @@ docker compose up -d --build gpu
 
 ### コンテナにアタッチ
 
-まず`.devcontainer/devcontainer.json`の`service`が作成したコンテナサービス名に設定する \
-前段でCPU環境用を起動した場合は`cpu`, GPU環境用を起動した場合は`gpu`と記載
-
 次にVScode左下の`><`ボタンより`コンテナで再度開く`でコンテナにアクセス
 
 ### 拡張機能インストール
@@ -125,7 +117,8 @@ docker compose up -d --build gpu
 ### linter/formatter
 
 <https://qiita.com/sin9270/items/85e2dab4c0144c79987d> \
-<https://qiita.com/fehde/items/723b619013dc86008acc>
+<https://qiita.com/fehde/items/723b619013dc86008acc> \
+<https://qiita.com/ciscorn/items/bf78b7ad8e0e332f891b>
 
 ### Azure pipelines
 
