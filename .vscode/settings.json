@@ -32,8 +32,11 @@
 			"source.organizeImports": "explicit"
 		},
 	},
+	"ruff.lint.args": [
+		"--config=${workspaceFolder}/pyproject.toml",
+	],
 	"mypy-type-checker.args": [
-		"--ignore-missing-imports",
+		"--config=${workspaceFolder}/pyproject.toml"
 	],
 	"editor.codeActionsOnSave": {
 		"source.organizeImports": "explicit"
