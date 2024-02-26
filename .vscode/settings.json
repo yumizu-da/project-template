@@ -34,10 +34,7 @@
 	},
 	"mypy-type-checker.args": [
 		"--ignore-missing-imports",
-		"plugins",
-		"pydantic.mypy"
 	],
-	"isort.check": true,
 	"editor.codeActionsOnSave": {
 		"source.organizeImports": "explicit"
 	},
