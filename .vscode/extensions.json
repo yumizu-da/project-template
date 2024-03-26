@@ -15,27 +15,26 @@
 		"nemesv.copy-file-name",
 		"christian-kohler.path-intellisense",
 		"Gruntfuggly.todo-tree",
-		"alefragnani.project-manager",
-		"ipatalas.vscode-sprint-planner",
+		"aaron-bond.better-comments",
+		"tamasfe.even-better-toml",
 		// Python
 		"ms-python.python",
 		"ms-python.vscode-pylance",
 		"ms-toolsai.jupyter",
-		"ms-toolsai.vscode-jupyter-cell-tags",
 		"ms-toolsai.jupyter-renderers",
+		"ms-toolsai.vscode-jupyter-cell-tags",
 		"ms-toolsai.vscode-jupyter-slideshow",
+		"ms-toolsai.vscode-jupyter-powertoys",
 		// formatter & linter
 		"charliermarsh.ruff",
 		"ms-python.mypy-type-checker",
 		// Git
 		"GitHub.copilot",
-		"GitHub.vscode-pull-request-github",
+		"github.copilot-chat",
 		"eamodio.gitlens",
 		"mhutchie.git-graph",
 		"donjayamanne.githistory",
 		"felipecaputo.git-project-manager",
-		"ankitbko.vscode-pull-request-azdo",
-		"neilbarkhina.gitdownloadazurerepos",
 		// Docker
 		"ms-azuretools.vscode-docker",
 		// Azure
@@ -46,12 +45,10 @@
 		"ms-azuretools.vscode-azurevirtualmachines",
 		// remote
 		"ms-vscode-remote.remote-containers",
-		"ms-vscode-remote.remote-ssh",
 		"ms-vscode-remote.remote-ssh-edit",
 		"ms-vscode-remote.vscode-remote-extensionpack",
 		"ms-vscode.remote-explorer",
 		"ms-vscode.remote-repositories",
-		"ms-vscode-remote.remote-wsl",
 		// markdown
 		"yzhang.markdown-all-in-one",
 		"DavidAnson.vscode-markdownlint",
@@ -62,6 +59,7 @@
 		"mechatroner.rainbow-csv",
 		"GrapeCity.gc-excelviewer",
 		"janisdd.vscode-edit-csv",
+		"ms-toolsai.datawrangler",
 		// Other
 		"ms-vscode.live-server",
 		"ritwickdey.LiveServer",

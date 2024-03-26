@@ -1,11 +1,9 @@
 {
-	"editor.fontSize": 11,
-	"editor.tabSize": 4,
+	"editor.formatOnType": true,
 	"editor.formatOnSave": true,
+	"editor.formatOnPaste": true,
 	"editor.renderWhitespace": "boundary",
 	"editor.cursorStyle": "line",
-	"editor.formatOnType": true,
-	"editor.formatOnPaste": true,
 	"editor.guides.bracketPairs": true,
 	"editor.bracketPairColorization.enabled": true,
 	"editor.bracketPairColorization.independentColorPoolPerBracketType": true,
@@ -27,9 +25,10 @@
 	"workbench.editor.enablePreviewFromQuickOpen": true,
 	"[python]": {
 		"editor.defaultFormatter": "charliermarsh.ruff",
-		"editor.formatOnSave": true,
+		"editor.tabSize": 4,
 		"editor.codeActionsOnSave": {
-			"source.organizeImports": "explicit"
+			"source.organizeImports": "explicit",
+			"source.fixAll": "explicit"
 		},
 	},
 	"ruff.lint.args": [
@@ -49,9 +48,12 @@
 		"MD046": false
 	},
 	"python.testing.pytestArgs": [
-		"tests"
+		"${workspaceFolder}/tests"
+	],
+	"python.analysis.extraPaths": [
+		"${workspaceFolder}/src",
+		"${workspaceFolder}/tests"
 	],
 	"python.testing.unittestEnabled": false,
 	"python.testing.pytestEnabled": true,
-	"workbench.editor.empty.hint": "hidden",
 }
