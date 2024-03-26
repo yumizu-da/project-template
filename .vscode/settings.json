@@ -27,8 +27,7 @@
 		"editor.defaultFormatter": "charliermarsh.ruff",
 		"editor.tabSize": 4,
 		"editor.codeActionsOnSave": {
-			"source.organizeImports": "explicit",
-			"source.fixAll": "explicit"
+			"source.organizeImports": "explicit"
 		},
 	},
 	"ruff.lint.args": [
