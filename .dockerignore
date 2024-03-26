@@ -1,3 +1,23 @@
+# Git
+.git
+.gitignore
+.github
+
+# Docker
+compose.yml
+
+# Distribution / packaging
+env/
+dist/
+
+# Virtual environment
+.env/
+.venv/
+
+# user settings
+.ruff_cache/
+.mypy_cache/
+.pytest_cache/
 data
 docs
 models
