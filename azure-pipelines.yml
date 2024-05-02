@@ -23,5 +23,5 @@ stages:
     - task: DockerCompose@0
       inputs:
         containerregistrytype: 'Azure Container Registry'
-        dockerComposeFile: '$(Build.SourcesDirectory)/docker-compose.yml'
+        dockerComposeFile: '$(Build.SourcesDirectory)/compose.yml'
         action: 'Run a Docker Compose command'
