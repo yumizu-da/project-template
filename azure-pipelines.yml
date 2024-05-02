@@ -20,8 +20,16 @@ stages:
     pool:
       vmImage: ubuntu-latest
     steps:
-    - task: DockerCompose@0
+    - task: Docker@2
+      displayName: Build an image
       inputs:
-        containerregistrytype: 'Azure Container Registry'
-        dockerComposeFile: '$(Build.SourcesDirectory)/compose.yml'
-        action: 'Run a Docker Compose command'
+        command: build
+        dockerfile: '$(Build.SourcesDirectory)/docker/Dockerfile.cpu'
+        buildContext: '$(Build.SourcesDirectory)'
+        arguments: '-t ubuntu:$(Build.BuildId)'
+    - script: |
+        docker run -v $(pwd):/workspace ubuntu:$(Build.BuildId) bash -c "rye sync && make lint"
+      displayName: 'Run Linter and Type hints'
+    - script: |
+        docker run -v $(pwd):/workspace ubuntu:$(Build.BuildId) bash -c "rye sync && make test"
+      displayName: 'Run PyTest'
