@@ -2,12 +2,12 @@
 
 <center>
 
-![image.png](docs/logos/facebook_cover_photo_2.png)
+![image.png](docs/logo.png)
 
 </center>
 
 <div align="center">
-    <img alt="python versions" src="https://img.shields.io/badge/python-3.10-blue?color=00adb5">
+    <img alt="python versions" src="https://img.shields.io/badge/python-3.12-blue?color=00adb5">
     <a href="https://opensource.org/licenses/MIT">
         <img alt="MIT License" src="https://img.shields.io/badge/license-MIT-green?color=00adb5">
     </a>
@@ -36,12 +36,12 @@ VSCode × Docker × Pythonでの機械学習リポジトリのテンプレート
 
 ## Used libraries
 
-- python3.10
+- python3.12
 - VSCode(devcontainer.json, setting.json, extensions.json)
 - docker
-- poetry
+- Rye + uv
 - Ruff
-- mypy
+- Mypy
 - mdformat
 - pytest
 - azure-pipelines
