@@ -1,13 +1,21 @@
-FROM python:3.10.12
+FROM ubuntu:22.04
 
-ENV PYTHONPATH="${PYTHONPATH}:/workspace"
+ENV TZ=Asia/Tokyo
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+
+RUN apt-get update && apt-get install -y curl git libgl1-mesa-dev libglib2.0-0 && \
+    apt-get upgrade -y && \
+    rm -rf /var/lib/apt/lists/* && \
+    apt-get clean
+
 WORKDIR /workspace
 
-ENV POETRY_HOME=/opt/poetry
-RUN curl -sSL https://install.python-poetry.org/ | python - --version 1.8.2 && \
-    cd /usr/bin && \
-    ln -s /opt/poetry/bin/poetry && \
-    poetry config virtualenvs.create false
-COPY pyproject.toml .
-COPY poetry.lock .
-RUN poetry install
+ENV RYE_HOME="/opt/rye"
+ENV PATH="$RYE_HOME/shims:$PATH"
+
+RUN curl -sSf https://rye-up.com/get | RYE_VERSION="0.32.0" RYE_INSTALL_OPTION="--yes" bash && \
+    rye config --set-bool behavior.use-uv=true
+
+COPY ./.python-version ./pyproject.toml ./requirements* ./
+RUN rye pin "$(cat .python-version)" && \
+    rye sync

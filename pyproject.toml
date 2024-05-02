@@ -1,27 +1,25 @@
-[tool.poetry]
-name = "project_name"
+[project]
+name = "default"
 version = "0.1.0"
-description = ""
-authors = ["yuki mizuta"]
+description = "Add your description here"
+dependencies = [
+    "numpy>=1.26.4",
+    "ipykernel>=6.29.4"
+]
 readme = "README.md"
+requires-python = ">= 3.12"
 
-[tool.poetry.dependencies]
-python = ">=3.10.0,<3.11.0"
-numpy = "^1.26.4"
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
-
-[tool.poetry.group.dev.dependencies]
-ipykernel = "^6.29.2"
-ruff = "^0.2.2"
-mypy = "^1.8.0"
-pytest = "^8.0.2"
-mdformat-gfm = "^0.3.6"
-mdformat-frontmatter = "^2.0.8"
-mdformat_footnote = "^0.1.1"
-pre-commit = "^3.6.2"
+[tool.rye]
+managed = true
+dev-dependencies = [
+    "ruff>=0.4.2",
+    "mypy>=1.10.0",
+    "pytest>=8.2.0",
+    "mdformat-gfm>=0.3.6",
+    "mdformat-frontmatter>=2.0.8",
+    "mdformat-footnote>=0.1.1",
+    "pre-commit>=3.7.0",
+]
 
 [tool.ruff]
 exclude = [
