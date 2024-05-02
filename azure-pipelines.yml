@@ -28,8 +28,14 @@ stages:
         buildContext: '$(Build.SourcesDirectory)'
         arguments: '-t ubuntu:$(Build.BuildId)'
     - script: |
-        docker run -v $(pwd):/workspace ubuntu:$(Build.BuildId) rye sync && make lint
+        docker run -v $(pwd):/workspace ubuntu:$(Build.BuildId) \
+        rye pin "$(cat .python-version)" && \
+        rye sync && \
+        make lint
       displayName: 'Run Linter and Type hints'
     - script: |
-        docker run -v $(pwd):/workspace ubuntu:$(Build.BuildId) rye sync && make test
+        docker run -v $(pwd):/workspace ubuntu:$(Build.BuildId) \
+        rye pin "$(cat .python-version)" && \
+        rye sync && \
+        make test
       displayName: 'Run PyTest'
