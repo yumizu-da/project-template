@@ -5,11 +5,14 @@ services:
     build:
       context: .
       dockerfile: docker/Dockerfile.cpu
-    shm_size: '28gb'
+    shm_size: '16gb'
     volumes:
       - type: bind
         source: $PWD
         target: /workspace
+      - type: volume
+        source: venv
+        target: /workspace/.venv
     working_dir: /workspace
     tty: true
   gpu:
@@ -17,11 +20,14 @@ services:
     build:
       context: .
       dockerfile: docker/Dockerfile.gpu
-    shm_size: '28gb'
+    shm_size: '64gb'
     volumes:
       - type: bind
         source: $PWD
         target: /workspace
+      - type: volume
+        source: venv
+        target: /workspace/.venv
     working_dir: /workspace
     deploy:
       resources:
@@ -30,3 +36,6 @@ services:
             - driver: nvidia
               capabilities: [ gpu ]
     tty: true
+
+volumes:
+  venv:
