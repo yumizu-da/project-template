@@ -9,6 +9,7 @@ RUN apt-get update && apt-get install -y curl git make libgl1-mesa-dev libglib2.
     apt-get clean
 
 WORKDIR /workspace
+ENV PYTHONPATH="${PYTHONPATH}:/workspace"
 
 ENV RYE_HOME="/opt/rye"
 ENV PATH="$RYE_HOME/shims:$PATH"
