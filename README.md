@@ -7,15 +7,15 @@
 </center>
 
 <div align="center">
-    <img alt="python versions" src="https://img.shields.io/badge/python-3.12-blue?color=00adb5">
+    <img alt="python versions" src="https://img.shields.io/badge/python-3.12-blue?color=5271FF">
     <a href="https://opensource.org/licenses/MIT">
-        <img alt="MIT License" src="https://img.shields.io/badge/license-MIT-green?color=00adb5">
+        <img alt="MIT License" src="https://img.shields.io/badge/license-MIT-green?color=5271FF">
     </a>
     <a href="https://github.com/PyCQA/flake8">
-        <img alt="ruff" src="https://img.shields.io/badge/code%20style-ruff-000000.svg?color=00adb5">
+        <img alt="ruff" src="https://img.shields.io/badge/code%20style-ruff-000000.svg?color=5271FF">
     </a>
     <a href="https://github.com/python/mypy">
-        <img alt="mypy" src="https://img.shields.io/badge/typing-mypy-blue?color=00adb5">
+        <img alt="mypy" src="https://img.shields.io/badge/typing-mypy-blue?color=5271FF">
     </a>
 </div>
 <br />
@@ -37,8 +37,8 @@ VSCode × Docker × Pythonでの機械学習リポジトリのテンプレート
 ## Used libraries
 
 - python3.12
-- VSCode(devcontainer.json, setting.json, extensions.json)
-- docker
+- VSCode
+- Docker
 - Rye + uv
 - Ruff
 - Mypy
