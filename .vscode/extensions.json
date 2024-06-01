@@ -1,9 +1,5 @@
 {
 	"recommendations": [
-		// VSCode theme
-		"MS-CEINTL.vscode-language-pack-ja",
-		"GitHub.github-vscode-theme",
-		"PKief.material-icon-theme",
 		// editor
 		"mosapride.zenkaku",
 		"oderwat.indent-rainbow",
@@ -14,57 +10,28 @@
 		"njpwerner.autodocstring",
 		"nemesv.copy-file-name",
 		"christian-kohler.path-intellisense",
-		"Gruntfuggly.todo-tree",
-		"aaron-bond.better-comments",
-		"tamasfe.even-better-toml",
 		// Python
 		"ms-python.python",
 		"ms-python.vscode-pylance",
 		"ms-toolsai.jupyter",
-		"ms-toolsai.jupyter-renderers",
 		"ms-toolsai.vscode-jupyter-cell-tags",
+		"ms-toolsai.jupyter-renderers",
 		"ms-toolsai.vscode-jupyter-slideshow",
-		"ms-toolsai.vscode-jupyter-powertoys",
 		// formatter & linter
 		"charliermarsh.ruff",
 		"ms-python.mypy-type-checker",
 		// Git
 		"GitHub.copilot",
-		"github.copilot-chat",
 		"eamodio.gitlens",
 		"mhutchie.git-graph",
-		"donjayamanne.githistory",
-		"felipecaputo.git-project-manager",
-		// Docker
-		"ms-azuretools.vscode-docker",
-		// Azure
-		"ms-vscode.azure-account",
-		"ms-vscode.azure-repos",
-		"ms-azuretools.vscode-azureresourcegroups",
-		"ms-azuretools.vscode-azurestorage",
-		"ms-azuretools.vscode-azurevirtualmachines",
-		// remote
-		"ms-vscode-remote.remote-containers",
-		"ms-vscode-remote.remote-ssh-edit",
-		"ms-vscode-remote.vscode-remote-extensionpack",
-		"ms-vscode.remote-explorer",
-		"ms-vscode.remote-repositories",
 		// markdown
 		"yzhang.markdown-all-in-one",
 		"DavidAnson.vscode-markdownlint",
-		"bierner.markdown-emoji",
-		"bierner.markdown-preview-github-styles",
-		"TakumiI.markdowntable",
 		// data
-		"mechatroner.rainbow-csv",
 		"GrapeCity.gc-excelviewer",
 		"janisdd.vscode-edit-csv",
-		"ms-toolsai.datawrangler",
 		// Other
-		"ms-vscode.live-server",
-		"ritwickdey.LiveServer",
-		"genieai.chatgpt-vscode",
-		"ms-vsliveshare.vsliveshare",
-		"adpyke.codesnap"
+		"adpyke.codesnap",
+		"ms-toolsai.datawrangler",
 	],
 }
