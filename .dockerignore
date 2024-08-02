@@ -4,20 +4,20 @@
 .github
 
 # Docker
-compose.yml
+compose.yaml
 
 # Distribution / packaging
-env/
-dist/
+env
+dist
 
 # Virtual environment
-.env/
-.venv/
+.env
+.venv
 
 # user settings
-.ruff_cache/
-.mypy_cache/
-.pytest_cache/
+.ruff_cache
+.mypy_cache
+.pytest_cache
 data
 docs
 models

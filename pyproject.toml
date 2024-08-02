@@ -9,6 +9,10 @@ dependencies = [
 readme = "README.md"
 requires-python = ">= 3.12"
 
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
 [tool.rye]
 managed = true
 dev-dependencies = [
@@ -18,47 +22,58 @@ dev-dependencies = [
     "mdformat-gfm>=0.3.6",
     "mdformat-frontmatter>=2.0.8",
     "mdformat-footnote>=0.1.1",
-    "pre-commit>=3.7.0",
 ]
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
 
 [tool.ruff]
-exclude = [
-    ".bzr",
-    ".direnv",
-    ".eggs",
-    ".git",
-    ".git-rewrite",
-    ".hg",
-    ".ipynb_checkpoints",
-    ".mypy_cache",
-    ".nox",
-    ".pants.d",
-    ".pyenv",
-    ".pytest_cache",
-    ".pytype",
-    ".ruff_cache",
-    ".svn",
-    ".tox",
-    ".venv",
-    ".vscode",
-    "__pypackages__",
-    "_build",
-    "buck-out",
-    "build",
-    "dist",
-    "node_modules",
-    "site-packages",
-    "venv",
-]
-line-length = 119
+exclude = [".git", ".mypy_cache", ".ruff_cache", ".venv", "third_party"]
+line-length = 120
 indent-width = 4
+target-version = "py312"
 
 [tool.ruff.lint]
+fixable = ["ALL"]
+unfixable = []
+select = [
+    "A",  # flake8-builtin
+    "B",  # flake8-bugbear
+    "E",  # pycodestyle error
+    "F",  # Pyflakes
+    "I",  # isort
+    "N",  # pep8-naming
+    "W",  # pycodestyle warning
+    "PL",  # Pylint
+    "UP",  # pyupgrade
+]
+ignore = [
+    "F401",  # Unused import
+]
 
 [tool.ruff.format]
 quote-style = "double"
+line-ending = "auto"
 
 [tool.ruff.lint.isort]
 
 [tool.mypy]
 ignore_missing_imports = true
+
+[tool.rye.scripts]
+# Lint scripts
+lint = { chain = ["lint:ruff", "lint:mypy", "lint:mdformat"] }
+"lint:ruff" = "ruff check ./ --diff"
+"lint:mypy" = "mypy ./ --explicit-package-bases"
+"lint:mdformat" = "mdformat --check"
+
+# Format scripts
+format = { chain = [ "format:ruff", "format:mdformat" ] }
+"format:ruff" = "ruff format ./"
+"format:mdformat" = "mdformat"
+
+# Test script
+test = "pytest tests -s"

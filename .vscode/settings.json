@@ -1,44 +1,59 @@
 {
-	"editor.formatOnType": true,
-	"editor.formatOnSave": true,
-	"editor.formatOnPaste": true,
-	"editor.renderWhitespace": "boundary",
-	"editor.cursorStyle": "line",
-	"editor.guides.bracketPairs": true,
-	"editor.bracketPairColorization.enabled": true,
-	"editor.bracketPairColorization.independentColorPoolPerBracketType": true,
-	"editor.wordWrap": "on",
-	"files.autoSave": "afterDelay",
-	"files.insertFinalNewline": true,
-	"files.trimFinalNewlines": true,
-	"files.trimTrailingWhitespace": true,
-	"workbench.iconTheme": "material-icon-theme",
-	"workbench.tree.renderIndentGuides": "always",
-	"workbench.reduceMotion": "on",
-	"workbench.editor.tabSizing": "shrink",
-	"terminal.integrated.copyOnSelection": true,
-	"terminal.integrated.rightClickBehavior": "paste",
-	"extensions.ignoreRecommendations": false,
-	"explorer.compactFolders": false,
-	"codesnap.shutterAction": "copy",
-	"workbench.editor.enablePreview": true,
-	"workbench.editor.enablePreviewFromQuickOpen": true,
+	// Editor settings
+	"editor.formatOnType": true, // タイプ時にフォーマットを実行
+	"editor.formatOnSave": true, // 保存時にフォーマットを実行
+	"editor.formatOnPaste": true, // ペースト時にフォーマットを実行
+	"editor.renderWhitespace": "boundary", // 空白文字を表示
+	"editor.cursorStyle": "line", // カーソルのスタイル
+	"editor.guides.bracketPairs": true, // 括弧の対応を表示
+	"editor.bracketPairColorization.enabled": true, // 括弧の色分け
+	"editor.bracketPairColorization.independentColorPoolPerBracketType": true, // 括弧の色分け
+	"editor.wordWrap": "on", // 1行が長い場合に自動折り返し
+	// File settings
+	"files.autoSave": "afterDelay", // 遅れて自動保存
+	"files.insertFinalNewline": true, // ファイルの最後に改行を挿入
+	"files.trimFinalNewlines": true, // ファイルの最後の空行を削除
+	"files.trimTrailingWhitespace": true, // 行末の空白を削除
+	"files.exclude": {
+		"src/__pycache__": true, // src/__pycache__を除外
+		".mypy_cache": true, // .mypy_cacheを除外
+		".pytest_cache": true, // .pytest_cacheを除外
+		".ruff_cache": true, // .ruff_cacheを除外
+		".venv": true, // .venvを除外
+	},
+	// Workbench settings
+	"workbench.iconTheme": "material-icon-theme", // アイコンテーマ
+	"workbench.tree.renderIndentGuides": "always", // インデントガイドを表示
+	"workbench.reduceMotion": "on", // モーションを減らす
+	"explorer.compactFolders": false, // フォルダをコンパクトに表示の無効化
+	// Terminal settings
+	"terminal.integrated.copyOnSelection": true, // 選択時にコピー可能に
+	"terminal.integrated.rightClickBehavior": "paste", // 右クリックでペースト
+	// Other
+	"extensions.ignoreRecommendations": true, // 拡張機能の推奨の通知
+	"codesnap.shutterAction": "copy", // CodeSnapのスクリーンショットをコピー
+	// Python formatterの設定
 	"[python]": {
-		"editor.defaultFormatter": "charliermarsh.ruff",
-		"editor.tabSize": 4,
-		"editor.codeActionsOnSave": {
-			"source.organizeImports": "explicit"
-		},
+		"editor.defaultFormatter": "charliermarsh.ruff", // Pythonのデフォルトフォーマッタをruffに設定
+		"editor.tabSize": 4, // タブサイズを4に設定
+		"editor.formatOnSave": true // 保存時にフォーマットを実行
 	},
 	"ruff.lint.args": [
-		"--config=${workspaceFolder}/pyproject.toml",
+		"--config=${workspaceFolder}/pyproject.toml", // Ruffの設定はpyproject.tomlに記述したものを採用
 	],
 	"mypy-type-checker.args": [
-		"--config=${workspaceFolder}/pyproject.toml"
+		"--config=${workspaceFolder}/pyproject.toml" // Mypyの設定はpyproject.tomlに記述したものを採用
 	],
 	"editor.codeActionsOnSave": {
-		"source.organizeImports": "explicit"
+		"source.organizeImports": "explicit" // 保存時にimportを自動整形
 	},
+	// Pythonのテスト設定
+	"python.testing.pytestArgs": [
+		"${workspaceFolder}/tests" // テストファイルのディレクトリを指定
+	],
+	"python.testing.unittestEnabled": false, // unittestを無効化
+	"python.testing.pytestEnabled": true, // pytestを有効化
+	// MarkdownLintの設定
 	"markdownlint.config": {
 		"MD007": false,
 		"MD024": false,
@@ -46,13 +61,14 @@
 		"MD041": false,
 		"MD046": false
 	},
-	"python.testing.pytestArgs": [
-		"${workspaceFolder}/tests"
-	],
+	// Pythonのパス設定
 	"python.analysis.extraPaths": [
 		"${workspaceFolder}/src",
 		"${workspaceFolder}/tests"
 	],
-	"python.testing.unittestEnabled": false,
-	"python.testing.pytestEnabled": true,
+	// Notebook settings
+	"notebook.output.scrolling": true, // ノートブックの出力をスクロール可能にする
+	"notebook.insertFinalNewline": true, // ノートブックの最後に改行を挿入する
+	"jupyter.askForKernelRestart": false, // Jupyterカーネルの再起動確認を無効にする
+	"notebook.formatOnSave.enabled": true, // ノートブックの保存時にフォーマットを実行
 }
