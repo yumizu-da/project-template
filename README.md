@@ -1,6 +1,8 @@
 # template-mzt-project
 
-<img alt="python versions" src="https://img.shields.io/badge/python-3.12-blue?color=5271FF">
+<a href="https://opensource.org/licenses/MIT">
+    <img alt="python versions" src="https://img.shields.io/badge/python-3.12-blue?color=5271FF">
+</a>
 <a href="https://opensource.org/licenses/MIT">
     <img alt="MIT License" src="https://img.shields.io/badge/license-MIT-green?color=5271FF">
 </a>
