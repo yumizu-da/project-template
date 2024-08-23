@@ -1,6 +1,6 @@
 services:
   cpu:
-    container_name: project_name.cpu
+    container_name: ml-project-template.cpu
     build:
       context: .
       dockerfile: docker/Dockerfile.cpu
@@ -15,7 +15,7 @@ services:
     working_dir: /workspace
     tty: true
   gpu:
-    container_name: project_name.gpu
+    container_name: ml-project-template.gpu
     build:
       context: .
       dockerfile: docker/Dockerfile.gpu

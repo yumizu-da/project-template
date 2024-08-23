@@ -1,4 +1,4 @@
-# template-mzt-project
+# ml-project-template
 
 <a href="https://opensource.org/licenses/MIT">
     <img alt="python versions" src="https://img.shields.io/badge/python-3.12-blue?color=5271FF">
@@ -18,9 +18,6 @@ VSCode × Docker × Pythonでの機械学習リポジトリのテンプレート
 ## Description
 
 機械学習プロジェクトを進める際に使用するテンプレートリポジトリです
-
-※ 使用する際は適宜`README.md`や`compose.yaml`等を編集してください \
-※ 自由気ままにアップデートしていきます
 
 ## Environment
 
