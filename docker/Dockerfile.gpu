@@ -9,9 +9,9 @@ RUN apt-get update && apt-get install -y curl git make libgl1-mesa-dev libglib2.
     apt-get clean
 
 WORKDIR /workspace
-ENV PYTHONPATH="${PYTHONPATH}:/workspace"
-ENV PATH="/root/.cargo/bin/:$PATH"
+ENV PATH="/root/.cargo/bin/:${PATH}"
 
 RUN curl -LsSf https://astral.sh/uv/install.sh | sh
+
 COPY .python-version pyproject.toml uv.lock README.md ./
 RUN uv sync
