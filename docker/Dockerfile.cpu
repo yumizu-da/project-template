@@ -10,13 +10,8 @@ RUN apt-get update && apt-get install -y curl git make libgl1-mesa-dev libglib2.
 
 WORKDIR /workspace
 ENV PYTHONPATH="${PYTHONPATH}:/workspace"
+ENV PATH="/root/.cargo/bin/:$PATH"
 
-ENV RYE_HOME="/opt/rye"
-ENV PATH="$RYE_HOME/shims:$PATH"
-
-RUN curl -sSf https://rye.astral.sh/get | RYE_VERSION="0.34.0" RYE_INSTALL_OPTION="--yes" bash && \
-    rye config --set-bool behavior.use-uv=true
-
-COPY ./.python-version ./pyproject.toml ./requirements* ./README.md ./
-RUN rye pin "$(cat .python-version)" && \
-    rye sync
+RUN curl -LsSf https://astral.sh/uv/install.sh | sh
+COPY .python-version pyproject.toml uv.lock README.md ./
+RUN uv sync
