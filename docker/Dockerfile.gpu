@@ -14,4 +14,5 @@ ENV PATH="/root/.cargo/bin/:${PATH}"
 RUN curl -LsSf https://astral.sh/uv/install.sh | sh
 
 COPY .python-version pyproject.toml uv.lock README.md ./
-RUN uv sync
+RUN uv python pin "$(cat .python-version)" && \
+    uv sync --dev
