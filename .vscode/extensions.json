@@ -33,5 +33,6 @@
 		// Other
 		"adpyke.codesnap",
 		"ms-toolsai.datawrangler",
+		"hoovercj.vscode-power-mode",
 	],
 }
