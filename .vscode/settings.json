@@ -30,7 +30,7 @@
 	"terminal.integrated.copyOnSelection": true, // 選択時にコピー可能に
 	"terminal.integrated.rightClickBehavior": "paste", // 右クリックでペースト
 	// Other
-	"extensions.ignoreRecommendations": true, // 拡張機能の推奨の通知
+	"extensions.ignoreRecommendations": false, // 拡張機能の推奨の通知
 	"codesnap.shutterAction": "copy", // CodeSnapのスクリーンショットをコピー
 	// Python formatterの設定
 	"[python]": {
