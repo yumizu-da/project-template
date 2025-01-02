@@ -1,0 +1,7 @@
+defaults:
+  - _self_
+
+exp_number: base   # 実験番号(実行時に書き換え)
+run_time: base     # 実験時間(実行時に書き換え)
+
+seed: 42
