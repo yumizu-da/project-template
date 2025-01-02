@@ -1,4 +1,4 @@
-FROM ubuntu:24.04
+FROM ubuntu:22.04
 
 ENV TZ=Asia/Tokyo
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
@@ -15,4 +15,4 @@ RUN curl -LsSf https://astral.sh/uv/install.sh | sh
 
 COPY .python-version pyproject.toml uv.lock README.md ./
 RUN uv python pin "$(cat .python-version)" && \
-    uv sync --dev
+    uv sync --extra cpu

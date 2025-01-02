@@ -14,11 +14,11 @@ services:
         target: /workspace/.venv
     working_dir: /workspace
     tty: true
-  gpu:
-    container_name: ml-project-template.gpu
+  cuda:
+    container_name: ml-project-template.cuda
     build:
       context: .
-      dockerfile: docker/Dockerfile.gpu
+      dockerfile: docker/Dockerfile.cuda
     shm_size: '64gb'
     volumes:
       - type: bind
